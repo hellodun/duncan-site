@@ -3,11 +3,11 @@
     {{- if .Site.Copyright }}
     <span>{{ .Site.Copyright | markdownify }}</span>
     {{- else }}
-    <span> Built with ♥ helloDun
+    <span> 2023 | Built with ♥ helloDun |
     {{- end }}
-    <div class="quote">
-        <p class="stoic-quote"></p>
-    </div>
+    <span class="counter-number">
+        Azure
+    </span>
 </footer>
 {{- end }}
 
@@ -54,10 +54,10 @@
     const counter = document.querySelector(".counter-number");
     async function updateCounter() {
         let response = await fetch(
-            // Azure endpoint
+            // Azure function endpoint
         );
         let data = await response.json();
-        console.log(data);
+        // let data = 1001;
         counter.innerHTML = `views: ${data}`;
     }
     updateCounter();
