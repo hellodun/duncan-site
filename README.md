@@ -1,6 +1,7 @@
 ### This is my site repo built with [Hugo](https://gohugo.io/installation/)
 
- <!-- insert screenshot -->
+![ProfilePic](static/images/screenshot.png)
+
 
 ## Setup Guide
 
