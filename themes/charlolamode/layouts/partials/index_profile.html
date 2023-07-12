@@ -2,11 +2,11 @@
     {{- with .Site.Params.profileMode }}
     <div class="profile_inner">
         {{- if .imageUrl -}}
-        <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default " profile image" }}"
+        <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         {{- end }}
         <h1>{{ .title | default $.Site.Title | markdownify }}</h1>
-        <div class="profile-description">{{ .description | markdownify }}</div>
+        <span>{{ .subtitle | markdownify }}</span>
         {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
 
         {{- with .buttons }}
@@ -21,3 +21,17 @@
     </div>
     {{- end}}
 </div>
+
+<style>
+.button {
+    display: block;
+    }
+
+    .button:hover {
+        background-image: linear-gradient(to right, #008b8b 0%,#008b8b  100%);
+        background-size: 400% 400%;
+        background-repeat: no-repeat;
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
