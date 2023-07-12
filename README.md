@@ -10,7 +10,7 @@ Follow the installation instructions for installing the following
    
 2. ### Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-3. Select a theme from [Hugo themes](https://themes.gohugo.io/) and flollow the installaion guides 
+3. Select a theme from [Hugo themes](https://themes.gohugo.io/) and follow the installaion guides 
 
 ## Customize the site with your data
 
