@@ -46,5 +46,4 @@ If you like to push new content, create a new Markdown file in the new folder. F
 
 ## Deploy the site
 
-For deployment, you can use Nexlify or in the cloud. <br>
-This will be deployed to [Azure Static Web Apps](https://azure.microsoft.com/en-us/products/app-service/static/)
+Planning on deploying the site to Azure
