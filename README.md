@@ -1,49 +1,34 @@
-### This is my site repo built with [Hugo](https://gohugo.io/installation/)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![ProfilePic](static/images/screenshot.png)
+## Getting Started
 
+First, run the development server:
 
-## Setup Guide
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-Follow the installation instructions for installing the following
-1. ### Install [Hugo](https://gohugo.io/installation/)
-   
-2. ### Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-3. Select a theme from [Hugo themes](https://themes.gohugo.io/) and follow the installaion guides 
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Customize the site with your data
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-### Basic Configuration
+## Learn More
 
-The config.yml is your best friend. You can modify and add information, such as ...
+To learn more about Next.js, take a look at the following resources:
 
-- Title of the page
-- Your Name
-- Social Icons
-- Buttons
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can easily add social icons like LinkedIn, Twitter, Youtube, Instagram, ... just have a look in the config.yml. Examples are already added.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Change Profile Image
+## Deploy on Vercel
 
-To add your profile pic, replace ***profile.png*** in the folder ***static/images***.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Add tabs
-
-In the config.yml you can add new tabs next to 'Articles' and 'Contact'. Uncomment 'Category' to check it out.
-
-***Note***
-If you add a new tab in the config.yml, you have to do the following:
-
-1. Add new folder in the directory 'content' with the ***same name*** as the new tab.
-2. Copy ***_index.md*** from articles into new folder.
-
-### Add new content
-
-If you like to push new content, create a new Markdown file in the new folder. Find an example in ***content/articles/article.md***.
-
-
-## Deploy the site
-
-Planning on deploying the site to Azure
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
