@@ -12,7 +12,7 @@ const Sidebar = () => {
   return (
     <div className="hidden lg:block px-6 w-72 pt-16 bg-secondaryLight dark:bg-secondaryDark h-screen">
       {/* Name & Theme toggle */}
-      <div className="flex justify-between">
+      <div className="flex items-center space-x-2">
         <Link href="/" className="font-extrabold text-4xl tracking-wider">
           helloDun
         </Link>
@@ -25,7 +25,7 @@ const Sidebar = () => {
           <li className={navLinksStyle} key={label}>
             <Link
               href={href}
-              key={href}
+              key={label}
               className="flex gap-x-3 items-center"
               // target="_blank"
             >
@@ -34,7 +34,7 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
-      <div>
+      {/* <div>
         <ul className="mt-12 flex items-center justify-around">
           {socialIcons.map(({ Icon, label, href }) => (
             <li className={socialLinksStyle} key={label}>
@@ -44,7 +44,7 @@ const Sidebar = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 import type { Metadata } from "next";
 import { Atkinson_Hyperlegible } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Providers from "./providers";
 import MobileMenu from "@/components/MobileMenu";
 import FooterNote from "@/components/FooterNote";
@@ -11,6 +12,11 @@ const artkinson = Atkinson_Hyperlegible({
   weight: "400",
   subsets: ["latin"],
   // fallback: ["helvetica", "arial", "sans-serif"],
+});
+
+const montserrat = Montserrat({
+  weight: ["400", "700", "900"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -35,7 +41,7 @@ export default function RootLayout({
           <Navbar />
           <Sidebar />
           <MobileMenu />
-          <main>{children}</main>
+          <main className={`${montserrat.className}`}>{children}</main>
         </body>
       </Providers>
     </html>
