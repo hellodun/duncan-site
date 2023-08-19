@@ -19,12 +19,12 @@ export const navIcons = [
   {
     Icon: <GitPullRequest size={24} />,
     label: "Projects",
-    href: "#",
+    href: "/projects",
   },
   {
     Icon: <Newspaper size={24} />,
     label: "Blog",
-    href: "#",
+    href: "https://blog.hellodun.com/",
   },
   {
     Icon: <User size={24} />,

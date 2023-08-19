@@ -27,14 +27,14 @@ const Sidebar = () => {
               href={href}
               key={label}
               className="flex gap-x-3 items-center"
-              // target="_blank"
+              target={label == "Blog" ? "_blank" : ""}
             >
               {Icon} {label}
             </Link>
           </li>
         ))}
       </ul>
-      {/* <div>
+      <div>
         <ul className="mt-12 flex items-center justify-around">
           {socialIcons.map(({ Icon, label, href }) => (
             <li className={socialLinksStyle} key={label}>
@@ -44,7 +44,7 @@ const Sidebar = () => {
             </li>
           ))}
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 };
