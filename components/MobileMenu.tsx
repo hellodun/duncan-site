@@ -27,7 +27,7 @@ const MobileMenu = () => {
         {/* Menu Items */}
         <ul className="font-semibold text-2xl space-y-2 p-4">
           {navIcons.map(({ Icon, label, href }) => (
-            <li className={navLinksStyle}>
+            <li className={navLinksStyle} key={label}>
               <Link
                 href={href}
                 key={href}
@@ -40,8 +40,8 @@ const MobileMenu = () => {
         </ul>
         <div>
           <ul className="mt-12 flex items-center justify-center space-x-10 mb-6">
-            {socialIcons.map(({ Icon, href }) => (
-              <li className={socialLinksStyle}>
+            {socialIcons.map(({ Icon, label, href }) => (
+              <li className={socialLinksStyle} key={label}>
                 <Link href={href} target="_blank">
                   {Icon}
                 </Link>

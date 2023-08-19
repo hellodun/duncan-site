@@ -22,8 +22,13 @@ const Sidebar = () => {
       {/* Menu Items */}
       <ul className="font-semibold text-2xl space-y-2 mt-6">
         {navIcons.map(({ Icon, label, href }) => (
-          <li className={navLinksStyle}>
-            <Link href={href} key={href} className="flex gap-x-3 items-center">
+          <li className={navLinksStyle} key={label}>
+            <Link
+              href={href}
+              key={href}
+              className="flex gap-x-3 items-center"
+              // target="_blank"
+            >
               {Icon} {label}
             </Link>
           </li>
@@ -31,8 +36,8 @@ const Sidebar = () => {
       </ul>
       <div>
         <ul className="mt-12 flex items-center justify-around">
-          {socialIcons.map(({ Icon, href }) => (
-            <li className={socialLinksStyle}>
+          {socialIcons.map(({ Icon, label, href }) => (
+            <li className={socialLinksStyle} key={label}>
               <Link href={href} target="_blank">
                 {Icon}
               </Link>
