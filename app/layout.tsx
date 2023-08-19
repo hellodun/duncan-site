@@ -22,7 +22,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Duncan Gatuthu | Personal website",
   description:
-    "Welcome to my personal website. Here I share updates on whats I'm up-to, that is, learning and projects.",
+    "Welcome to my personal website. Here I share updates on what I'm working on, that is, learning and projects.",
 };
 
 export default function RootLayout({
