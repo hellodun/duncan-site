@@ -15,7 +15,7 @@ const artkinson = Atkinson_Hyperlegible({
 });
 
 const montserrat = Montserrat({
-  weight: ["400", "700", "900"],
+  weight: ["500", "800"],
   subsets: ["latin"],
 });
 
