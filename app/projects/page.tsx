@@ -3,10 +3,8 @@ import { childrenCommonStyles } from "../layout";
 
 const Projects = () => {
   return (
-    <div
-      className={`${childrenCommonStyles} absolute flex h-full items-center`}
-    >
-      <h3 className="text-lg italic font-mono">
+    <div className={`${childrenCommonStyles} flex items-center h-[85vh]`}>
+      <h3 className="text-lg italic font-mono items-center">
         I&apos;m working on a couple of case studies. I&apos;ll be sharing
         soon...
       </h3>
