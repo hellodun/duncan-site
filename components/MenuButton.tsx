@@ -13,6 +13,12 @@ const MenuButton = () => {
       }
     }
 
+    function menuItemClick() {
+      setShowMenu(false);
+    }
+
+    document.getElementById("menu")?.addEventListener("click", menuItemClick);
+
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
   }, []);
@@ -33,7 +39,7 @@ const MenuButton = () => {
         }
       }}
     >
-      {showMenu === false ? <Menu /> : <X />}
+      {!showMenu ? <Menu /> : <X />}
     </button>
   );
 };

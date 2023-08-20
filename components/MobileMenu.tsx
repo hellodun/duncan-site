@@ -31,6 +31,9 @@ const MobileMenu = () => {
               <Link
                 href={href}
                 key={href}
+                onClick={() => {
+                  document.getElementById("menu")?.classList.add("hidden");
+                }}
                 className="flex gap-x-3 items-center"
               >
                 {Icon} {label}
