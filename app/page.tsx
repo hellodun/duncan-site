@@ -30,8 +30,8 @@ export default function Home() {
             Hello, Welcome 👋🏽
           </span>
           <span className="block">
-            <span className="font-semibold">I&apos;m Duncan Gatuthu </span>
-            currently working as a Systems admin and Azure cloud engineer.
+            <span className="font-semibold">I&apos;m Duncan Gatuthu, </span>a
+            Systems admin and Azure cloud engineer.
           </span>
           <span className="block">
             On this site, I&apos;ll be sharing what I&apos;m learning through
