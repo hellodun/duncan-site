@@ -1,7 +1,5 @@
-import Image from "next/image";
-import profile_img from "../../public/images/profile.jpg";
-import { profileImageStyle } from "../page";
 import { childrenCommonStyles } from "../layout";
+import { ProfileImage } from "../page";
 
 export default function About() {
   return (
@@ -9,16 +7,7 @@ export default function About() {
       <div
         className={`${childrenCommonStyles} flex flex-col items-center mt-4 lg:mt-8 xl:mt-16 space-y-3 2xl:space-y-6 pb-4`}
       >
-        <Image
-          className={`${profileImageStyle} w-[120px] lg:w-[150px] 2xl:w-[180px]`}
-          alt="helloDun profile image"
-          src={profile_img}
-          style={{
-            maxWidth: "12.5%",
-            height: "auto",
-          }}
-        />
-
+        <ProfileImage />
         {/* Paragraph */}
         <p className="text-lg sm:text-xl xl:text-2xl 2xl:text-4xl font-medium space-y-3 2xl:space-y-6">
           <span className="block">
