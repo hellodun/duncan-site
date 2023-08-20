@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${artkinson.className}`}>
       <Providers>
-        <body className="lg:flex bg-primaryLight text-primaryDark dark:bg-primaryDark dark:text-primaryLight min-w-fit">
+        <body className="relative lg:flex bg-primaryLight text-primaryDark dark:bg-primaryDark dark:text-primaryLight min-w-fit">
           <Navbar />
           <Sidebar />
           <MobileMenu />

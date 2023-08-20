@@ -9,20 +9,17 @@ export default function Home() {
   return (
     <>
       <div
-        className={`${childrenCommonStyles} flex flex-col items-center mt-4 lg:mt-8 xl:mt-16 space-y-3 lg:space-y-5`}
+        className={`${childrenCommonStyles} flex flex-col items-center mt-4 lg:mt-8 xl:mt-16 space-y-3 lg:space-y-5 pb-3`}
       >
         <Image
-          className={profileImageStyle}
+          className={`${profileImageStyle} w-[120px] lg:w-[150px] 2xl:w-[180px]`}
           alt="helloDun profile image"
           src={profile_img}
-          style={{
-            maxWidth: "12.5%",
-            height: "auto",
-          }}
+          width={120}
         />
 
         {/* Paragraph */}
-        <p className="text-lg sm:text-xl lg:text-2xl 2xl:text-4xl font-medium space-y-3 lg:space-y-5 2xl:space-y-6">
+        <p className="text-xl lg:text-2xl 2xl:text-4xl font-medium space-y-3 lg:space-y-5 2xl:space-y-6">
           <span className="font-semibold text-xl sm:text-2xl lg:text-3xl 2xl:text-5xl">
             Hello, Welcome 👋🏽
           </span>

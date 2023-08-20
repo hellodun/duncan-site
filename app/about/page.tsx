@@ -7,10 +7,10 @@ export default function About() {
   return (
     <>
       <div
-        className={`${childrenCommonStyles} flex flex-col items-center mt-4 lg:mt-8 xl:mt-16 space-y-3 2xl:space-y-6`}
+        className={`${childrenCommonStyles} flex flex-col items-center mt-4 lg:mt-8 xl:mt-16 space-y-3 2xl:space-y-6 pb-4`}
       >
         <Image
-          className={profileImageStyle}
+          className={`${profileImageStyle} w-[120px] lg:w-[150px] 2xl:w-[180px]`}
           alt="helloDun profile image"
           src={profile_img}
           style={{
