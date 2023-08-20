@@ -27,12 +27,12 @@ export default function Home() {
             Hello, Welcome 👋🏽
           </span>
           <span className="block">
-            <span className="font-semibold">I’m Duncan Gatuthu </span>
+            <span className="font-semibold">I&apos;m Duncan Gatuthu </span>
             currently working as a Systems admin and Azure cloud engineer.
           </span>
           <span className="block">
-            On this site, I’ll be sharing what I’m learning through projects,
-            demos and blogs.
+            On this site, I&apos;ll be sharing what I&apos;m learning through
+            projects, demos and blogs.
           </span>
           <span className="block">
             Have a looks at the blog and projects sections for more.

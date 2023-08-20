@@ -22,23 +22,23 @@ export default function About() {
         {/* Paragraph */}
         <p className="text-lg sm:text-xl xl:text-2xl 2xl:text-4xl font-medium space-y-3 2xl:space-y-6">
           <span className="block">
-            <span className="font-bold">Hi, I’m Duncan,</span> a System Admin
-            and an Azure cloud engineer. I also do software development on the
-            side.
+            <span className="font-bold">Hi, I&apos;m Duncan,</span> a System
+            Admin and an Azure cloud engineer. I also do software development on
+            the side.
           </span>
           <span className="block">
-            I’m currently preparing for the Azure Solutions Architect
+            I&apos;m currently preparing for the Azure Solutions Architect
             Certification in September 2023 and also working on some community
             projects using Azure.
           </span>
           <span className="block">
-            I have a blog where I’ll be documenting my learning especially in
-            cloud and also software development, feel free to check it out.
+            I have a blog where I&apos;ll be documenting my learning especially
+            in cloud and also software development, feel free to check it out.
           </span>
           <span className="block">
-            I learn best by doing projects and I’ll be documenting some projects
-            and demos here in this site, so as to compliment the learning
-            process and also for knowledge sharing.
+            I learn best by doing projects and I&apos;ll be documenting some
+            projects and demos here in this site, so as to compliment the
+            learning process and also for knowledge sharing.
           </span>
         </p>
       </div>
