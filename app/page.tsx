@@ -3,7 +3,7 @@ import profile_img from "../public/images/profile.jpg";
 import { childrenCommonStyles } from "./layout";
 
 export const profileImageStyle =
-  "rounded-xl sm:rounded-2xl xl:rounded-[20px] border-secondaryLight dark:border-secondaryDark border-4 sm:border-8 xl:border-[10px]";
+  "rounded-3xl xl:rounded-[20px] border-secondaryLight dark:border-secondaryDark border-8 xl:border-[10px]";
 
 export default function Home() {
   return (
