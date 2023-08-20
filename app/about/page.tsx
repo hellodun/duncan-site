@@ -5,14 +5,14 @@ export default function About() {
   return (
     <>
       <div
-        className={`${childrenCommonStyles} flex flex-col items-center mt-4 lg:mt-8 xl:mt-16 space-y-3 2xl:space-y-6 pb-4`}
+        className={`${childrenCommonStyles} flex flex-col items-center mt-4 lg:mt-8 xl:mt-16 space-y-3 2xl:space-y-6 pb-10`}
       >
         <ProfileImage />
         {/* Paragraph */}
         <p className="text-lg sm:text-xl xl:text-2xl 2xl:text-4xl font-medium space-y-3 2xl:space-y-6">
           <span className="block">
             <span className="font-bold">Hi, I&apos;m Duncan,</span> a System
-            Admin and an Azure cloud engineer. I also do software development on
+            Admin and Azure cloud engineer. I also do software development on
             the side.
           </span>
           <span className="block">
