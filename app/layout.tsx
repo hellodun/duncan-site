@@ -33,17 +33,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={`${artkinson.className}`}
-    >
+    <html lang="en" className={`${artkinson.className}`}>
       <Providers>
         <body className="lg:flex bg-primaryLight text-primaryDark dark:bg-primaryDark dark:text-primaryLight min-w-fit">
           <Navbar />
           <Sidebar />
           <MobileMenu />
-          <main className={`${montserrat.className} lg:ml-[25%]`}>
+          <main
+            className={`${montserrat.className} lg:ml-[25%]`}
+            suppressHydrationWarning={true}
+          >
             {children}
           </main>
         </body>
