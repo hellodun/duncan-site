@@ -12,22 +12,22 @@ export const myName = "helloDun";
 
 export const navIcons = [
   {
-    Icon: <LayoutGrid size={24} />,
+    Icon: <LayoutGrid className="2xl:h-[40px] 2xl:w-[40px]" />,
     label: "Home",
     href: "/",
   },
   {
-    Icon: <GitPullRequest size={24} />,
+    Icon: <GitPullRequest className="2xl:h-[40px] 2xl:w-[40px]" />,
     label: "Projects",
     href: "/projects",
   },
   {
-    Icon: <Newspaper size={24} />,
+    Icon: <Newspaper className="2xl:h-[40px] 2xl:w-[40px]" />,
     label: "Blog",
     href: "https://blog.hellodun.com/",
   },
   {
-    Icon: <User size={24} />,
+    Icon: <User className="2xl:h-[40px] 2xl:w-[40px]" />,
     label: "About me",
     href: "/about",
   },
@@ -35,21 +35,18 @@ export const navIcons = [
 
 export const socialIcons = [
   {
-    Icon: <Linkedin size={24} />,
+    Icon: <Linkedin className="2xl:h-[40px] 2xl:w-[40px]" />,
     label: `Reach me on LinkedIn`,
-    // href: "https://linkedin.com/in/duncan-gatuthu",
-    href: "#",
+    href: "https://linkedin.com/in/duncan-gatuthu",
   },
   {
-    Icon: <Github size={24} />,
+    Icon: <Github className="2xl:h-[40px] 2xl:w-[40px]" />,
     label: `Check out my Github`,
-    // href: "https://github.com/hellodun",
-    href: "#",
+    href: "https://github.com/hellodun",
   },
   {
-    Icon: <Mail size={24} />,
+    Icon: <Mail className="2xl:h-[40px] 2xl:w-[40px]" />,
     label: `Email me`,
-    // href: "https://iamdun254@gmail.com",
-    href: "#",
+    href: "mailto:duncodes@gmail.com",
   },
 ];

@@ -25,6 +25,8 @@ export const metadata: Metadata = {
     "Welcome to my personal website. Here I share updates on what I'm working on, that is, learning and projects.",
 };
 
+export const childrenCommonStyles = "mx-10";
+
 export default function RootLayout({
   children,
 }: {
@@ -41,7 +43,9 @@ export default function RootLayout({
           <Navbar />
           <Sidebar />
           <MobileMenu />
-          <main className={`${montserrat.className}`}>{children}</main>
+          <main className={`${montserrat.className} lg:ml-[25%]`}>
+            {children}
+          </main>
         </body>
       </Providers>
     </html>

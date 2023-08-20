@@ -1,19 +1,21 @@
 import Link from "next/link";
 import { navIcons, socialIcons } from "./Icons";
-import { Sun } from "lucide-react";
 import ThemeButton from "./ThemeButton";
 
 const navLinksStyle =
-  "hover:bg-primaryLight hover:dark:bg-primaryDark rounded-xl py-2 px-5 transition duration-200 ease-in-out";
+  "hover:bg-primaryLight hover:dark:bg-primaryDark rounded-xl py-2 2xl:py-4 px-5 2xl:py-10 2xl:space-y-6 transition duration-200 ease-in-out";
 const socialLinksStyle =
   "hover:bg-primaryLight hover:dark:bg-primaryDark rounded-xl p-3 transition duration-200 ease-in-out";
 
 const Sidebar = () => {
   return (
-    <div className="hidden lg:block px-6 w-72 pt-16 bg-secondaryLight dark:bg-secondaryDark h-screen">
+    <div className="hidden lg:block fixed px-6 w-[25%] pt-16 xl:pt-24 bg-secondaryLight dark:bg-secondaryDark h-[100%] overflow-auto">
       {/* Name & Theme toggle */}
-      <div className="flex items-center space-x-2">
-        <Link href="/" className="font-extrabold text-4xl tracking-wider">
+      <div className="flex items-center justify-between">
+        <Link
+          href="/"
+          className="font-extrabold text-4xl 2xl:text-6xl tracking-wider"
+        >
           helloDun
         </Link>
         <ThemeButton />
@@ -22,14 +24,14 @@ const Sidebar = () => {
       {/* Menu Items */}
       <ul className="font-semibold text-2xl space-y-2 mt-6">
         {navIcons.map(({ Icon, label, href }) => (
-          <li className={navLinksStyle} key={label}>
+          <li className={`${navLinksStyle}`} key={label}>
             <Link
               href={href}
               key={label}
-              className="flex gap-x-3 items-center"
+              className="flex space-x-8 items-center"
               target={label == "Blog" ? "_blank" : ""}
             >
-              {Icon} {label}
+              {Icon} <span className="2xl:text-4xl">{label}</span>
             </Link>
           </li>
         ))}

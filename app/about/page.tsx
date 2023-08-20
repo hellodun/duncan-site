@@ -1,12 +1,16 @@
 import Image from "next/image";
 import profile_img from "../../public/images/profile.jpg";
+import { profileImageStyle } from "../page";
+import { childrenCommonStyles } from "../layout";
 
 export default function About() {
   return (
     <>
-      <div className="flex flex-col items-center mt-4 lg:mt-8 space-y-6">
+      <div
+        className={`${childrenCommonStyles} flex flex-col items-center mt-4 lg:mt-8 xl:mt-16 space-y-3 2xl:space-y-6`}
+      >
         <Image
-          className="rounded-3xl border-secondaryLight dark:border-secondaryDark border-8"
+          className={profileImageStyle}
           alt="helloDun profile image"
           src={profile_img}
           style={{
@@ -16,7 +20,7 @@ export default function About() {
         />
 
         {/* Paragraph */}
-        <p className="text-2xl font-medium mx-10 space-y-3">
+        <p className="text-lg sm:text-xl xl:text-2xl 2xl:text-4xl font-medium space-y-3 2xl:space-y-6">
           <span className="block">
             <span className="font-bold">Hi, I’m Duncan,</span> a System Admin
             and an Azure cloud engineer. I also do software development on the
