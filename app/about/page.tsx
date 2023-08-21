@@ -26,8 +26,7 @@ export default function About() {
           </span>
           <span className="block">
             I learn best by doing projects and I&apos;ll be documenting some
-            projects and demos here in this site, so as to compliment the
-            learning process and also for knowledge sharing.
+            projects and demos here.
           </span>
         </p>
       </div>
