@@ -16,9 +16,9 @@ export default function About() {
             the side.
           </span>
           <span className="block">
-            I&apos;m currently preparing for the Azure Solutions Architect
-            Certification in September 2023 and also working on some community
-            projects using Azure.
+            I&apos;m currently preparing for the Azure Developer Certification
+            in September 2023 and also working on some community projects using
+            Azure.
           </span>
           <span className="block">
             I have a blog where I&apos;ll be documenting my learning especially
