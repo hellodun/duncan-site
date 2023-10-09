@@ -24,7 +24,7 @@ export const navIcons = [
   {
     Icon: <Newspaper className="2xl:h-[40px] 2xl:w-[40px]" />,
     label: "Blog",
-    href: "https://blog.hellodun.com/",
+    href: "/blogs",
   },
   {
     Icon: <User className="2xl:h-[40px] 2xl:w-[40px]" />,

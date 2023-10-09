@@ -29,7 +29,6 @@ const Sidebar = () => {
               href={href}
               key={label}
               className="flex space-x-8 items-center"
-              target={label == "Blog" ? "_blank" : ""}
             >
               {Icon} <span className="2xl:text-4xl">{label}</span>
             </Link>
