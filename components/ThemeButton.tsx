@@ -21,9 +21,9 @@ const ThemeButton = () => {
       className="hover:bg-primaryLight hover:dark:bg-primaryDark rounded-xl p-3 transition duration-200 ease-in-out text-primaryDark dark:text-primaryLight"
     >
       {theme === "light" ? (
-        <Sun className="2xl:h-[40px] 2xl:w-[40px]" />
-      ) : (
         <Moon className="2xl:h-[40px] 2xl:w-[40px]" />
+      ) : (
+        <Sun className="2xl:h-[40px] 2xl:w-[40px]" />
       )}
     </button>
   );
