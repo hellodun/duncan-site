@@ -10,6 +10,21 @@ import {
 
 export const myName = "helloDun";
 
+export const blogLinks = [
+  {
+    label: "dev.to",
+    href: "https://dev.to/hellodun"
+  },
+  {
+    label: "Hashnode",
+    href: "https://blog.hellodun.com/"
+  },
+  {
+    label: "Medium",
+    href: "https://medium.com/@hellodun"
+  }
+];
+
 export const navIcons = [
   {
     Icon: <LayoutGrid className="2xl:h-[40px] 2xl:w-[40px]" />,
