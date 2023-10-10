@@ -2,6 +2,7 @@ import React from "react";
 import { childrenCommonStyles } from "../layout";
 import Link from "next/link";
 import { blogLinks } from "@/components/Icons";
+import { Bird } from "lucide-react";
 
 const blogLinksStyle =
   "bg-secondaryDark";
@@ -23,10 +24,10 @@ const Blogs = () => {
           >{label}</Link>
         ))}
       </div> */}
-      <h1>Coming Soon...</h1>
       {/* Search area */}
       {/* Blog tiles */}
 
+        <Bird size={48} />
     </div>
   );
 };
