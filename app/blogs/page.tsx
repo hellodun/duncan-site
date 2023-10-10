@@ -14,12 +14,13 @@ const Blogs = () => {
 
       {/* Other Blog links */}
       <div className="mt-4 flex justify-between gap-6">
-        {blogLinks.map(({ label, href }) => (
+        {blogLinks.map(({href, label}) => (
           <Link 
           href={href} 
-          key={href}
-          target="_blank" 
-          className="flex-1 bg-secondaryLight dark:bg-secondaryDark text-lg font-semibold rounded-md text-center py-2 px-8">{label}</Link>
+          key={href} 
+          target="_blank"
+          className="flex-1 bg-secondaryLight dark:bg-secondaryDark font-medium px-4 py-2 rounded-md text-center"
+          >{label}</Link>
         ))}
       </div>
       {/* Search area */}
