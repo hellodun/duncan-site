@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "Welcome to my personal website. Here I share updates on what I'm working on, that is, learning and projects.",
 };
 
-export const childrenCommonStyles = "mx-10";
+export const childrenCommonStyles = "mx-10 mt-4";
 
 export default function RootLayout({
   children,
@@ -40,7 +40,7 @@ export default function RootLayout({
           <Sidebar />
           <MobileMenu />
           <main
-            className={`${montserrat.className} lg:ml-[25%]`}
+            className={`${montserrat.className} w-full lg:w-[75%]`}
             suppressHydrationWarning={true}
           >
             {children}

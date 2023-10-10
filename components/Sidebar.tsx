@@ -9,7 +9,7 @@ const socialLinksStyle =
 
 const Sidebar = () => {
   return (
-    <div className="hidden lg:block fixed px-6 w-[25%] pt-16 xl:pt-24 bg-secondaryLight dark:bg-secondaryDark h-[100%] overflow-auto">
+    <div className="hidden lg:block px-6 w-[25%] pt-16 xl:pt-24 bg-secondaryLight dark:bg-secondaryDark h-screen overflow-auto">
       {/* Name & Theme toggle */}
       <div className="flex items-center justify-between">
         <Link

@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <div
-        className={`${childrenCommonStyles} flex flex-col items-center mt-4 lg:mt-8 xl:mt-16 space-y-3 lg:space-y-5 pb-3`}
+        className={`${childrenCommonStyles} flex flex-col items-center lg:mt-8 xl:mt-16 space-y-3 lg:space-y-5 pb-3`}
       >
         <ProfileImage />
         {/* Paragraph */}
