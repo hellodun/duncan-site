@@ -25,7 +25,7 @@ export const blogLinks = [
   }
 ];
 
-export const navIcons = [
+export const navLinks = [
   {
     Icon: <LayoutGrid className="2xl:h-[40px] 2xl:w-[40px]" />,
     label: "Home",
@@ -48,7 +48,7 @@ export const navIcons = [
   },
 ];
 
-export const socialIcons = [
+export const socialLinks = [
   {
     Icon: <Linkedin className="2xl:h-[40px] 2xl:w-[40px]" />,
     label: `Reach me on LinkedIn`,

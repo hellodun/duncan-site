@@ -1,7 +1,7 @@
 import React from "react";
 import { childrenCommonStyles } from "../layout";
 import Link from "next/link";
-import { blogLinks } from "@/components/Icons";
+import { blogLinks } from "@/components/Links";
 import { Bird } from "lucide-react";
 
 const blogLinksStyle =

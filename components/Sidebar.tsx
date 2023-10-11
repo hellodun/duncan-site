@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navIcons, socialIcons } from "./Icons";
+import { navLinks, socialLinks } from "./Links";
 import ThemeButton from "./ThemeButton";
 
 const navLinksStyle =
@@ -23,7 +23,7 @@ const Sidebar = () => {
 
       {/* Menu Items */}
       <ul className="font-semibold text-2xl space-y-2 mt-6">
-        {navIcons.map(({ Icon, label, href }) => (
+        {navLinks.map(({ Icon, label, href }) => (
           <li className={`${navLinksStyle}`} key={label}>
             <Link
               href={href}
@@ -37,7 +37,7 @@ const Sidebar = () => {
       </ul>
       <div>
         <ul className="mt-12 flex items-center justify-around">
-          {socialIcons.map(({ Icon, label, href }) => (
+          {socialLinks.map(({ Icon, label, href }) => (
             <li className={socialLinksStyle} key={label}>
               <Link href={href} target="_blank">
                 {Icon}
