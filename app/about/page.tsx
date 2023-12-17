@@ -16,7 +16,7 @@ export default function About() {
             the side.
           </span>
           <span className="block">
-            I&apos;m currently working on some projects using Go and also upskilling on Kubernetes, using the CNCF's Book Club community.
+            I am currently working on some projects using Go and also upskilling on Kubernetes, using the CNCF's Book Club community.
           </span>
           <span className="block">
             I have a blog where I&apos;ll be documenting my learning especially
