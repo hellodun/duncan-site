@@ -1,6 +1,6 @@
 # My personal website | hellodun
 
-Welcome to this repo for my personal website built using Next.js 13! This website showcases some of my projects, blog posts, and more. Feel free to explore the codebase and have a look at the deployed site at [hellodun.com](https://www.hellodun.com).
+Welcome to this repo for my personal website built using Next.js 13! This website showcases some of my projects, blog posts, and more. Feel free to explore the codebase and have a look at the deployed site at [hellodun.com](https://duncan-site-six.vercel.app/).
 
 ## Table of Contents
 
