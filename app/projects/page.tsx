@@ -1,5 +1,4 @@
-import React from "react";
-import { childrenCommonStyles } from "../layout";
+import { childrenCommonStyles } from "@/lib/styles";
 
 const Projects = () => {
   return (

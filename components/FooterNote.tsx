@@ -1,11 +1,9 @@
-import React from "react";
-
 const FooterNote = () => {
   return (
     <div className="font-bold mb-4 bg-gray-900 w-full">
-      <span>Made with &nbsp;❤️ &nbsp;</span>
+      <span>Made with &nbsp;&#10084;&#65039; &nbsp;</span>
       <span>helloDun &nbsp;</span>
-      <span>&copy; &nbsp; 2023</span>
+      <span>&copy; &nbsp; {new Date().getFullYear()}</span>
     </div>
   );
 };
