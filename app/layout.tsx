@@ -5,13 +5,11 @@ import type { Metadata } from "next";
 import { Atkinson_Hyperlegible } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import Providers from "./providers";
-import MobileMenu from "@/components/MobileMenu";
 import FooterNote from "@/components/FooterNote";
 
 const artkinson = Atkinson_Hyperlegible({
   weight: "400",
   subsets: ["latin"],
-  // fallback: ["helvetica", "arial", "sans-serif"],
 });
 
 const montserrat = Montserrat({
@@ -25,8 +23,6 @@ export const metadata: Metadata = {
     "Welcome to my personal website. Here I share updates on what I'm working on, that is, learning and projects.",
 };
 
-export const childrenCommonStyles = "mx-10 mt-4";
-
 export default function RootLayout({
   children,
 }: {
@@ -35,14 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${artkinson.className}`}>
       <Providers>
-        <body className="relative lg:flex bg-primaryLight text-primaryDark dark:bg-primaryDark dark:text-primaryLight min-w-fit">
+        <body className="relative lg:flex bg-primary-light text-primary-dark dark:bg-primary-dark dark:text-primary-light min-w-fit">
           <Navbar />
           <Sidebar />
-          <MobileMenu />
-          <main
-            className={`${montserrat.className} w-full lg:w-[75%]`}
-            suppressHydrationWarning={true}
-          >
+          <main className={`${montserrat.className} w-full lg:w-[75%]`}>
             {children}
           </main>
         </body>
@@ -50,10 +42,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// White theme colours
-// #E9EEF3 - primaryLight (Background) (Text)
-// #F8FAFC - secondaryLight - [lighter] (Card, menu, hover Background)
-
-// #202225 - primaryDark (Background) (Text)
-// #2F3136 - secondaryDark - [lighter] (Card, menu, hover Background)

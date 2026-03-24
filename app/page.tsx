@@ -1,14 +1,12 @@
 import Image from "next/image";
 import profile_img from "../public/images/profile.jpg";
-import { childrenCommonStyles } from "./layout";
-
-export const profileImageStyle = "";
+import { childrenCommonStyles } from "@/lib/styles";
 
 export const ProfileImage = () => {
   return (
     <Image
       className={
-        "rounded-3xl xl:rounded-[20px] border-secondaryLight dark:border-secondaryDark border-8 xl:border-[10px] w-[120px] lg:w-[150px] 2xl:w-[180px]"
+        "rounded-3xl xl:rounded-[20px] border-secondary-light dark:border-secondary-dark border-8 xl:border-[10px] w-[120px] lg:w-[150px] 2xl:w-[180px]"
       }
       alt="helloDun profile image"
       src={profile_img}
