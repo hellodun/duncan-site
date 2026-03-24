@@ -1,15 +1,17 @@
+"use client";
+
 import Link from "next/link";
-import { navLinks, socialLinks } from "./Links";
+import { navLinks, socialLinks } from "./NavLinks";
 import ThemeButton from "./ThemeButton";
 
 const navLinksStyle =
-  "hover:bg-primaryLight hover:dark:bg-primaryDark rounded-xl py-2 2xl:py-4 px-5 2xl:py-10 2xl:space-y-6 transition duration-200 ease-in-out";
+  "hover:bg-primary-light hover:dark:bg-primary-dark rounded-xl py-2 2xl:py-4 px-5 2xl:py-10 2xl:space-y-6 transition duration-200 ease-in-out";
 const socialLinksStyle =
-  "hover:bg-primaryLight hover:dark:bg-primaryDark rounded-xl p-3 transition duration-200 ease-in-out";
+  "hover:bg-primary-light hover:dark:bg-primary-dark rounded-xl p-3 transition duration-200 ease-in-out";
 
 const Sidebar = () => {
   return (
-    <div className="hidden lg:block px-6 w-[25%] pt-16 xl:pt-24 bg-secondaryLight dark:bg-secondaryDark h-screen overflow-auto">
+    <div className="hidden lg:block px-6 w-[25%] pt-16 xl:pt-24 bg-secondary-light dark:bg-secondary-dark h-screen overflow-auto">
       {/* Name & Theme toggle */}
       <div className="flex items-center justify-between">
         <Link

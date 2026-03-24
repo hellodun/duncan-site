@@ -1,4 +1,4 @@
-import { childrenCommonStyles } from "../layout";
+import { childrenCommonStyles } from "@/lib/styles";
 import { ProfileImage } from "../page";
 
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
             the side.
           </span>
           <span className="block">
-            I am currently working on some projects using Go and also upskilling on Kubernetes, using the CNCF's Book Club community.
+            I am currently working on some projects using Go and also upskilling on Kubernetes, using the CNCF&apos;s Book Club community.
           </span>
           <span className="block">
             I have a blog where I will be documenting my learning especially

@@ -1,9 +1,10 @@
 "use client";
 
 import { ThemeProvider } from "next-themes";
+import { ReactNode } from "react";
 
 type ReactProps = {
-  children: JSX.Element;
+  children: ReactNode;
 };
 
 const Providers = ({ children }: ReactProps) => {

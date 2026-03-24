@@ -1,11 +1,6 @@
-import React from "react";
-import { childrenCommonStyles } from "../layout";
+import { childrenCommonStyles } from "@/lib/styles";
 import Link from "next/link";
 import { blogLinks } from "@/components/Links";
-import { Bird } from "lucide-react";
-
-const blogLinksStyle =
-  "bg-secondaryDark";
 
 const Blogs = () => {
   return (
@@ -16,11 +11,11 @@ const Blogs = () => {
       {/* Other Blog links */}
       <div className="mt-4 flex flex-col sm:flex-row justify-between gap-3">
         {blogLinks.map(({href, label}) => (
-          <Link 
-          href={href} 
-          key={href} 
+          <Link
+          href={href}
+          key={href}
           target="_blank"
-          className="flex-1 bg-secondaryLight dark:bg-secondaryDark font-medium px-4 py-2 rounded-md text-center"
+          className="flex-1 bg-secondary-light dark:bg-secondary-dark font-medium px-4 py-2 rounded-md text-center"
           >{label}</Link>
         ))}
       </div>
